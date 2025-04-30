@@ -1,14 +1,15 @@
-@use "base/_variables";
-@use "components/_buttons";
+@use "base/variables";
+@use "components/buttons";
 
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  color: variables.$text;
 }
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }
 }
 
 body {
-    background: lightgray;
+    background: variables.$base;
 }
