@@ -2,12 +2,16 @@
 @use "components/buttons";
 
 :root {
-  font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-  color: variables.$text;
+    color: variables.$text;
+    font-family: Inter, sans-serif;
+    font-feature-settings:
+        "liga" 1,
+        "calt" 1; /* fix for Chrome */
 }
 @supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
 }
 
 * {
@@ -37,41 +41,52 @@ a {
 
 .nav-panel {
     align-items: center;
-    background: linear-gradient(to right, variables.$surface0, variables.$base);
+    background: linear-gradient(to right, variables.$surface1, variables.$base);
     display: flex;
     flex: 1;
     height: 100svh;
     justify-content: center;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     ul {
         list-style: none;
-        padding: 0 0.5em;
+        padding: 0 variables.$nav-link-padding;
+        width: 100%;
     }
 
     li {
-        margin: 0.5em 0;
-        padding: 0.5em;
+        margin: variables.$nav-link-padding 0;
+        padding: variables.$nav-link-padding 0 variables.$nav-link-padding 10%;
     }
 }
 
 .nav-link {
     color: variables.$text;
-    font-size: 2.5em;
+    font-size: variables.$nav-link-font-size;
     text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+
+    &:hover {
+        color: variables.$accent;
+    }
 }
 
 .active-section {
+    color: variables.$accent;
     font-weight: bold;
+    transform: translateX(variables.$nav-link-padding);
 }
 
 .content {
     display: flex;
     flex: 2;
     flex-direction: column;
-    gap: 30%;
+    gap: variables.$section-gap;
     max-height: 100svh;
     overflow: auto;
+    padding: variables.$section-gap 0;
 }
 
 .introduction-container {
@@ -82,11 +97,11 @@ a {
 .introduction-content-container {
     align-items: center;
     display: flex;
-    gap: 1em;
+    gap: variables.$paragraph-skip;
 
     article {
         p {
-            margin: 1em 0;
+            margin: variables.$paragraph-skip 0;
         }
     }
 }
@@ -94,6 +109,10 @@ a {
 .image-of-me {
     border-radius: 50%;
     width: 20%;
+}
+
+.icon {
+    width: 50px;
 }
 
 .education-container {
@@ -105,124 +124,18 @@ a {
 .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
+    gap: variables.$card-padding;
+    padding: variables.$card-padding;
 }
 
 .card {
     background-color: variables.$surface0;
-    border-radius: 2em;
-    padding: 3em;
+    border-radius: variables.$border-radius;
+    padding: variables.$card-padding;
 }
 
-.card-image {
-    overflow: hidden;
-    border-radius: 8px 8px 0 0;
-    height: 200px;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.5s ease;
-    }
-}
-
-// News card specific styling
-.news-card {
+.contact-card {
     display: flex;
-    flex-direction: column;
-    height: 100%;
-
-    &:hover .card-image img {
-        transform: scale(1.05);
-    }
-
-    .card-content {
-        padding: 1.25rem;
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-    }
-
-    .card-date {
-        color: variables.$subtext0;
-        font-size: 0.9rem;
-        margin-bottom: 0.5rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    }
-
-    p {
-        flex-grow: 1;
-        margin-bottom: 1rem;
-    }
-
-    .read-more {
-        align-self: flex-start;
-        padding: 0.5rem 0;
-        font-weight: bold;
-        text-decoration: none;
-
-        &:after {
-            content: " →";
-            transition: margin-left 0.2s ease;
-        }
-
-        &:hover:after {
-            margin-left: 5px;
-        }
-    }
-}
-
-// Product card specific styling
-.product-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-
-    &:hover .card-image img {
-        transform: scale(1.05);
-    }
-
-    .card-content {
-        padding: 1.25rem;
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-        margin-bottom: 0.75rem;
-    }
-
-    .product-description {
-        flex-grow: 1;
-        margin-bottom: 1rem;
-    }
-
-    .product-price {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: variables.$accent;
-        margin-bottom: 1rem;
-    }
-
-    .add-to-cart {
-        padding: 0.75rem 1rem;
-        background-color: variables.$accent;
-        color: variables.$crust;
-        border: none;
-        border-radius: 4px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-
-        &:hover {
-            background-color: darken(variables.$accent, 10%);
-        }
-    }
+    align-items: center;
+    gap: variables.$card-padding;
 }
