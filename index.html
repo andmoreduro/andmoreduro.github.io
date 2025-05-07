@@ -10,127 +10,169 @@
         <title>Andrés' Portfolio</title>
     </head>
     <body>
-        <header>
-            <h1>Andrés' Portfolio</h1>
-            <p>In Colombia, in the city of Sincelejo, in a poor neighboorhood a little boy was born, and his name was Andrés Felipe Moreno Durango.</p>
-            <img src="assets/images/me.jpg" alt="Portrait photo of Andrés Felipe Moreno Durango, the author of this website.">
-        </header>
-        <section>
-            <h2>Education</h2>
-            <article>
-                <h3>Institución Educativa Antonio Lenis</h3>
-                <p>From 2013 to 2018.</p>
-            </article>
-            <article>
-                <h3>Universidad Nacional de Colombia</h3>
-                <p>From 2019 to 2021.</p>
-            </article>
-            <article>
-                <h3>Universidad Manuela Beltrán</h3>
-                <p>From 2021 to date.</p>
-            </article>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <article>
-                <h2>None</h2>
-                <p>None</p>
-            </article>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <article>
-                <h3>Django</h3>
-                <p></p>
-            </article>
-            <article>
-                <h3>FastAPI</h3>
-                <p></p>
-            </article>
-            <article>
-                <h3>React</h3>
-                <p></p>
-            </article>
-            <article>
-                <h3>Relational Databases</h3>
-                <p></p>
-            </article>
-            <article>
-                <h3>MongoDB</h3>
-                <p></p>
-            </article>
-            <article>
-                <h3>Linux</h3>
-                <p></p>
-            </article>
-            <article>
-                <h3>Java</h3>
-                <p></p>
-            </article>
-        </section>
-        <section>
-            <h3>Certificates</h3>
-            <article>
-                <h2>Introduction to Cybersecurity</h2>
-                <p>From Cisco. Issued in May 2024.</p>
-            </article>
-            <article>
-                <h2>Python Essentials 1</h2>
-                <p>From Cisco. Issued in May 2024.</p>
-            </article>
-            <article>
-                <h2>SCRUM Fundamentals Certified (SFC)</h2>
-                <p>From SCRUMstudy - Accreditation Body for Scrum and Agile. Issued in March 2024.</p>
-            </article>
-            <article>
-                <h2>NDG Linux Unhatched</h2>
-                <p>From Network Development Group. Issued in February 2024.</p>
-            </article>
-            <article>
-                <h2>CCNAv7: Switching, Routing and Wireless Essentials</h2>
-                <p>From Cisco. Issued in November 2023.</p>
-            </article>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <article>
-                <h3>None</h4>
-                <p>None</p>
-            </article>
-        </section>
-        <section>
-            <h2>Publications</h3>
-            <article>
-                <h3>None</h4>
-                <p>None</p>
-            </article>
-        </section>
-        <section>
-            <h2>Awards</h3>
-            <article>
-                <h3>None</h4>
-                <p>None</p>
-            </article>
-        </section>
-        <section>
-            <h2>Testimonials</h2>
-            <article>
-                <h3>None</h3>
-                <p>None</p>
-            </article>
-        </section>
-        <footer>
-            <section>
-                <h2>Contact Information</h2>
-                <article>
-                    <h3>Linkedin</h3>
-                    <p><a href="www.linkedin.com/in/andrés-moreno-8b0506264">www.linkedin.com/in/andrés-moreno-8b0506264</a></p>
-                </article>
-                <article>
-                    <h3>Github</h3>
-                    <p><a href="www.github.com/andmoreduro">www.github.com/andmoreduro</a></p>
-                </article>
-            </section>
-        </footer>
+        <div class="container">
+            <nav class="nav-panel">
+                <ul>
+                    <li><a class="nav-link active-section" href="#introduction">Introduction</a></li>
+                    <li><a class="nav-link" href="#education">Education</a></li>
+                    <li><a class="nav-link" href="#experience">Experience</a></li>
+                    <li><a class="nav-link" href="#skills"">Skills</a></li>
+                    <li><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#publications">Publications</a></li>
+                    <li><a class="nav-link" href="#awards">Awards</a></li>
+                    <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li><a class="nav-link" href="#contact-information">Contact information</a></li>
+                    <li><a class="nav-link" href="news.html">News</a></li>
+                    <li><a class="nav-link" href="shop.html">Shop</a></li>
+                </ul>
+            </nav>
+            <main class="content">
+                <section class="introduction-container" id="introduction">
+                    <h1>Introduction</h1>
+                    <div class="introduction-content-container">
+                        <img class="image-of-me" src="assets/images/me.jpg" alt="Portrait photo of Andrés Felipe Moreno Durango, the author of this website.">
+                        <article>
+                            <p>In Colombia, in the city of Sincelejo, in a poor neighboorhood a little boy was born, and his name was Andrés Felipe Moreno Durango.</p>
+                            <p>I am a Software Engineering student with strong teamwork, effective communication and problem solving skills. I stand out for bringing innovative perspectives that positively impact project development. I have doubled my productivity by mastering typing techniques and I have an upper-intermediate level of English, I prefer collaborative and multicultural environments.</p>
+                        </article>
+                    </div>
+                </section>
+                <section id="education">
+                    <h1>Education</h1>
+                    <div class="card-container">
+                        <article class="card">
+                            <h2>Institución Educativa Antonio Lenis</h2>
+                            <p>From 2013 to 2018. Specialization in Mathematics.</p>
+                        </article>
+                        <article class="card">
+                            <h2>Universidad Nacional de Colombia</h2>
+                            <p>From 2019 to 2021. Unfinished. Electronic Engineering degree.</p>
+                        </article>
+                        <article class="card">
+                            <h2>Universidad Manuela Beltrán</h2>
+                            <p>From 2021 to date. Software Engineering degree.</p>
+                        </article>
+                    </div>
+                </section>
+                <section id="experience">
+                    <h1>Experience</h1>
+                    <div class="card-container">
+                        <article class="card">
+                            <h2>None</h2>
+                            <p>None</p>
+                        </article>
+                    </div>
+                </section>
+                <section id="skills">
+                    <h1>Skills</h1>
+                    <div class="card-container">
+                        <article class="card">
+                            <h2>Django</h2>
+                            <p></p>
+                        </article>
+                        <article class="card">
+                            <h2>FastAPI</h2>
+                            <p></p>
+                        </article>
+                        <article class="card">
+                            <h2>React</h2>
+                            <p></p>
+                        </article>
+                        <article class="card">
+                            <h2>Relational Databases</h2>
+                            <p></p>
+                        </article>
+                        <article class="card">
+                            <h2>MongoDB</h2>
+                            <p></p>
+                        </article>
+                        <article class="card">
+                            <h2>Linux</h2>
+                            <p></p>
+                        </article>
+                        <article class="card">
+                            <h2>Java</h2>
+                            <p></p>
+                        </article>
+                    </div>
+                </section>
+                <section id="certificates">
+                    <h1>Certificates</h1>
+                    <div class="card-container">
+                        <article class="card">
+                            <h2>Introduction to Cybersecurity</h2>
+                            <p>From Cisco. Issued in May 2024.</p>
+                        </article>
+                        <article class="card">
+                            <h2>Python Essentials 1</h2>
+                            <p>From Cisco. Issued in May 2024.</p>
+                        </article>
+                        <article class="card">
+                            <h2>SCRUM Fundamentals Certified (SFC)</h2>
+                            <p>From SCRUMstudy - Accreditation Body for Scrum and Agile. Issued in March 2024.</p>
+                        </article>
+                        <article class="card">
+                            <h2>NDG Linux Unhatched</h2>
+                            <p>From Network Development Group. Issued in February 2024.</p>
+                        </article>
+                        <article class="card">
+                            <h2>CCNAv7: Switching, Routing and Wireless Essentials</h2>
+                            <p>From Cisco. Issued in November 2023.</p>
+                        </article>
+                    </div>
+                </section>
+                <section id="projects">
+                    <h1>Projects</h1>
+                    <div class="card-container">
+                        <article class="card">
+                            <h2>None</h4>
+                            <p>None</p>
+                        </article>
+                    </div>
+                </section>
+                <section id="publications">
+                    <h1>Publications</h1>
+                    <div class="card-container">
+                        <article class="card">
+                            <h2>None</h4>
+                            <p>None</p>
+                        </article>
+                    </div>
+                </section>
+                <section id="awards">
+                    <h1>Awards</h1>
+                    <div class="card-container">
+                        <article class="card">
+                            <h2>None</h4>
+                            <p>None</p>
+                        </article>
+                    </div>
+                </section>
+                <section id="testimonials">
+                    <h1>Testimonials</h1>
+                    <div class="card-container">
+                        <article class="card">
+                            <h2>None</h4>
+                            <p>None</p>
+                        </article>
+                    </div>
+                </section>
+                <section id="contact-information">
+                    <h1>Contact Information</h1>
+                    <div class="card-container">
+                        <article class="card">
+                            <h2>Linkedin</h2>
+                            <p><a href="www.linkedin.com/in/andrés-moreno-8b0506264">www.linkedin.com/in/andrés-moreno-8b0506264</a></p>
+                        </article>
+                        <article class="card">
+                            <h2>Github</h2>
+                            <p><a href="www.github.com/andmoreduro">www.github.com/andmoreduro</a></p>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/scroll-spy.js"></script>
     </body>
 </html>

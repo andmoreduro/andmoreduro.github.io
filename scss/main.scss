@@ -10,6 +10,219 @@
   :root { font-family: InterVariable, sans-serif; }
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: variables.$base;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+a {
+    color: variables.$accent;
+}
+
+.container {
+    display: flex;
+    min-height: 100svh;
+    height: 100svh;
+}
+
+.nav-panel {
+    align-items: center;
+    background: linear-gradient(to right, variables.$surface0, variables.$base);
+    display: flex;
+    flex: 1;
+    height: 100svh;
+    justify-content: center;
+    overflow: auto;
+
+    ul {
+        list-style: none;
+        padding: 0 0.5em;
+    }
+
+    li {
+        margin: 0.5em 0;
+        padding: 0.5em;
+    }
+}
+
+.nav-link {
+    color: variables.$text;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+.active-section {
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    gap: 30%;
+    max-height: 100svh;
+    overflow: auto;
+}
+
+.introduction-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction-content-container {
+    align-items: center;
+    display: flex;
+    gap: 1em;
+
+    article {
+        p {
+            margin: 1em 0;
+        }
+    }
+}
+
+.image-of-me {
+    border-radius: 50%;
+    width: 20%;
+}
+
+.education-container {
+    background-color: variables.$surface0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.card {
+    background-color: variables.$surface0;
+    border-radius: 2em;
+    padding: 3em;
+}
+
+.card-image {
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    height: 200px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+}
+
+// News card specific styling
+.news-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &:hover .card-image img {
+        transform: scale(1.05);
+    }
+
+    .card-content {
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .card-date {
+        color: variables.$subtext0;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        flex-grow: 1;
+        margin-bottom: 1rem;
+    }
+
+    .read-more {
+        align-self: flex-start;
+        padding: 0.5rem 0;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:after {
+            content: " →";
+            transition: margin-left 0.2s ease;
+        }
+
+        &:hover:after {
+            margin-left: 5px;
+        }
+    }
+}
+
+// Product card specific styling
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &:hover .card-image img {
+        transform: scale(1.05);
+    }
+
+    .card-content {
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .product-description {
+        flex-grow: 1;
+        margin-bottom: 1rem;
+    }
+
+    .product-price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: variables.$accent;
+        margin-bottom: 1rem;
+    }
+
+    .add-to-cart {
+        padding: 0.75rem 1rem;
+        background-color: variables.$accent;
+        color: variables.$crust;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background-color: darken(variables.$accent, 10%);
+        }
+    }
 }
