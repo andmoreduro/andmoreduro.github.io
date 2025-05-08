@@ -10,7 +10,7 @@
         <title>Andrés' Portfolio</title>
     </head>
     <body>
-        <div class="container" itemscope itemtype="https://schema.org/Person">
+        <div class="container" itemscope itemtype="https://schema.org/Person" id="person">
             <nav class="nav-panel">
                 <ul>
                     <li><a class="nav-link active-section" href="#introduction">Introduction</a></li>
@@ -39,24 +39,39 @@
                 <section id="education">
                     <h1>Education</h1>
                     <div class="card-container">
-                        <article class="card" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-                            <h2 itemprop="name">Institución Educativa Antonio Lenis</h2>
-                            <p><meta itemprop="startDate" content="2013">From 2013 to <meta itemprop="endDate" content="2018">2018. <span itemprop="educationalCredentialAwarded">Specialization in Mathematics</span>.</p>
+                        <article class="card" itemscope itemtype="https://schema.org/EducationalOrganizationRole">
+                            <meta itemprop="startDate" content="2013">
+                            <meta itemprop="endDate" content="2018">
+                            <div itemprop="educationalCredentialAwarded">Specialization in Mathematics</div>
+                            <div itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                                <h2 itemprop="name">Institución Educativa Antonio Lenis</h2>
+                                <p>From 2013 to 2018.</p>
+                            </div>
                         </article>
-                        <article class="card" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-                            <h2 itemprop="name">Universidad Nacional de Colombia</h2>
-                            <p><meta itemprop="startDate" content="2019">From 2019 to <meta itemprop="endDate" content="2021">2021. Unfinished. <span itemprop="educationalCredentialAwarded">Electronic Engineering degree</span>.</p>
+                        <article class="card" itemscope itemtype="https://schema.org/EducationalOrganizationRole">
+                            <meta itemprop="startDate" content="2019">
+                            <meta itemprop="endDate" content="2021">
+                            <div itemprop="educationalCredentialAwarded">Electronic Engineering degree</div>
+                            <div itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                                <h2 itemprop="name">Universidad Nacional de Colombia</h2>
+                                <p>From 2019 to 2021. Unfinished.</p>
+                            </div>
                         </article>
-                        <article class="card" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
-                            <h2 itemprop="name">Universidad Manuela Beltrán</h2>
-                            <p><meta itemprop="startDate" content="2021">From 2021 to date. <span itemprop="educationalCredentialAwarded">Software Engineering degree</span>.</p>
+                        <article class="card" itemscope itemtype="https://schema.org/EducationalOrganizationRole">
+                            <meta itemprop="startDate" content="2021">
+                            <div itemprop="educationalCredentialAwarded">Software Engineering degree</div>
+                            <div itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                                <h2 itemprop="name">Universidad Manuela Beltrán</h2>
+                                <p>From 2021 to date.</p>
+                            </div>
                         </article>
                     </div>
                 </section>
                 <section id="experience">
                     <h1>Experience</h1>
                     <div class="card-container">
-                        <article class="card" itemprop="workExperience" itemscope itemtype="https://schema.org/OrganizationRole">
+                        <article class="card" itemscope itemtype="https://schema.org/OrganizationRole">
+                            <meta itemprop="roleName" content="No Work Experience">
                             <h2>None</h2>
                             <p>None</p>
                         </article>
@@ -64,32 +79,40 @@
                 </section>
                 <section id="skills">
                     <h1>Skills</h1>
+                    <div itemprop="knowsAbout" itemscope itemtype="https://schema.org/ItemList">
                     <div class="card-container">
-                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                        <article class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <link itemprop="url" href="#skills" />
                             <h2 itemprop="name">Django</h2>
                             <p></p>
                         </article>
-                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                        <article class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <link itemprop="url" href="#skills" />
                             <h2 itemprop="name">FastAPI</h2>
                             <p></p>
                         </article>
-                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                        <article class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <link itemprop="url" href="#skills" />
                             <h2 itemprop="name">React</h2>
                             <p></p>
                         </article>
-                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                        <article class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <link itemprop="url" href="#skills" />
                             <h2 itemprop="name">Relational Databases</h2>
                             <p></p>
                         </article>
-                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                        <article class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <link itemprop="url" href="#skills" />
                             <h2 itemprop="name">MongoDB</h2>
                             <p></p>
                         </article>
-                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                        <article class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <link itemprop="url" href="#skills" />
                             <h2 itemprop="name">Linux</h2>
                             <p></p>
                         </article>
-                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                        <article class="card" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <link itemprop="url" href="#skills" />
                             <h2 itemprop="name">Java</h2>
                             <p></p>
                         </article>
@@ -123,7 +146,7 @@
                 <section id="projects">
                     <h1>Projects</h1>
                     <div class="card-container">
-                        <article class="card" itemprop="makesOffer" itemscope itemtype="https://schema.org/CreativeWork">
+                        <article class="card" itemscope itemtype="https://schema.org/CreativeWork">
                             <h2 itemprop="name">None</h2>
                             <p itemprop="description">None</p>
                         </article>
@@ -132,7 +155,7 @@
                 <section id="publications">
                     <h1>Publications</h1>
                     <div class="card-container">
-                        <article class="card" itemprop="publication" itemscope itemtype="https://schema.org/CreativeWork">
+                        <article class="card" itemscope itemtype="https://schema.org/CreativeWork">
                             <h2 itemprop="name">None</h2>
                             <p itemprop="description">None</p>
                         </article>
@@ -141,7 +164,7 @@
                 <section id="awards">
                     <h1>Awards</h1>
                     <div class="card-container">
-                        <article class="card" itemprop="award" itemscope itemtype="https://schema.org/Award">
+                        <article class="card" itemscope itemtype="https://schema.org/Thing">
                             <h2 itemprop="name">None</h2>
                             <p itemprop="description">None</p>
                         </article>
@@ -150,7 +173,7 @@
                 <section id="testimonials">
                     <h1>Testimonials</h1>
                     <div class="card-container">
-                        <article class="card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                        <article class="card" itemscope itemtype="https://schema.org/Review">
                             <h2 itemprop="author">None</h2>
                             <p itemprop="reviewBody">None</p>
                         </article>
