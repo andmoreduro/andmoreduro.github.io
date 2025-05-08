@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Allow all web crawlers to access all content
+Sitemap: https://andmoreduro.github.io/sitemap.xml
