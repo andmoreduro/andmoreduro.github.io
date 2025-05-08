@@ -98,12 +98,12 @@ a {
     align-items: center;
     display: flex;
     gap: variables.$paragraph-skip;
+}
 
-    article {
-        p {
-            margin: variables.$paragraph-skip 0;
-        }
-    }
+.introduction-content {
+    display: flex;
+    flex-direction: column;
+    gap: variables.$paragraph-skip;
 }
 
 .image-of-me {
