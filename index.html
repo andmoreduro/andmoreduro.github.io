@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/ProfilePage">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
         <title>Andrés' Portfolio</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container" itemscope itemtype="https://schema.org/Person">
             <nav class="nav-panel">
                 <ul>
                     <li><a class="nav-link active-section" href="#introduction">Introduction</a></li>
@@ -27,36 +27,36 @@
             </nav>
             <main class="content">
                 <section class="introduction-container" id="introduction">
-                    <h1>Introduction</h1>
+                    <h1 itemprop="name">Introduction</h1>
                     <div class="introduction-content-container">
-                        <img class="image-of-me" src="assets/images/me.jpg" alt="Portrait photo of Andrés Felipe Moreno Durango, the author of this website.">
+                        <img class="image-of-me" src="assets/images/me.jpg" alt="Portrait photo of Andrés Felipe Moreno Durango, the author of this website." itemprop="image">
                         <div>
-                            <p>In Colombia, in the city of Sincelejo, in a poor neighboorhood a little boy was born, and his name was Andrés Felipe Moreno Durango.</p>
-                            <p>I am a Software Engineering student with strong teamwork, effective communication and problem solving skills. I stand out for bringing innovative perspectives that positively impact project development. I have doubled my productivity by mastering typing techniques and I have an upper-intermediate level of English, I prefer collaborative and multicultural environments.</p>
+                            <p>In Colombia, in the city of <span itemprop="birthPlace">Sincelejo</span>, in a poor neighboorhood a little boy was born, and his name was <span itemprop="givenName">Andrés Felipe</span> <span itemprop="familyName">Moreno Durango</span>.</p>
+                            <p itemprop="description">I am a Software Engineering student with strong teamwork, effective communication and problem solving skills. I stand out for bringing innovative perspectives that positively impact project development. I have doubled my productivity by mastering typing techniques and I have an upper-intermediate level of English, I prefer collaborative and multicultural environments.</p>
                         </div>
                     </div>
                 </section>
                 <section id="education">
                     <h1>Education</h1>
                     <div class="card-container">
-                        <article class="card">
-                            <h2>Institución Educativa Antonio Lenis</h2>
-                            <p>From 2013 to 2018. Specialization in Mathematics.</p>
+                        <article class="card" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                            <h2 itemprop="name">Institución Educativa Antonio Lenis</h2>
+                            <p><meta itemprop="startDate" content="2013">From 2013 to <meta itemprop="endDate" content="2018">2018. <span itemprop="educationalCredentialAwarded">Specialization in Mathematics</span>.</p>
                         </article>
-                        <article class="card">
-                            <h2>Universidad Nacional de Colombia</h2>
-                            <p>From 2019 to 2021. Unfinished. Electronic Engineering degree.</p>
+                        <article class="card" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                            <h2 itemprop="name">Universidad Nacional de Colombia</h2>
+                            <p><meta itemprop="startDate" content="2019">From 2019 to <meta itemprop="endDate" content="2021">2021. Unfinished. <span itemprop="educationalCredentialAwarded">Electronic Engineering degree</span>.</p>
                         </article>
-                        <article class="card">
-                            <h2>Universidad Manuela Beltrán</h2>
-                            <p>From 2021 to date. Software Engineering degree.</p>
+                        <article class="card" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                            <h2 itemprop="name">Universidad Manuela Beltrán</h2>
+                            <p><meta itemprop="startDate" content="2021">From 2021 to date. <span itemprop="educationalCredentialAwarded">Software Engineering degree</span>.</p>
                         </article>
                     </div>
                 </section>
                 <section id="experience">
                     <h1>Experience</h1>
                     <div class="card-container">
-                        <article class="card">
+                        <article class="card" itemprop="workExperience" itemscope itemtype="https://schema.org/OrganizationRole">
                             <h2>None</h2>
                             <p>None</p>
                         </article>
@@ -65,32 +65,32 @@
                 <section id="skills">
                     <h1>Skills</h1>
                     <div class="card-container">
-                        <article class="card">
-                            <h2>Django</h2>
+                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <h2 itemprop="name">Django</h2>
                             <p></p>
                         </article>
-                        <article class="card">
-                            <h2>FastAPI</h2>
+                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <h2 itemprop="name">FastAPI</h2>
                             <p></p>
                         </article>
-                        <article class="card">
-                            <h2>React</h2>
+                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <h2 itemprop="name">React</h2>
                             <p></p>
                         </article>
-                        <article class="card">
-                            <h2>Relational Databases</h2>
+                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <h2 itemprop="name">Relational Databases</h2>
                             <p></p>
                         </article>
-                        <article class="card">
-                            <h2>MongoDB</h2>
+                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <h2 itemprop="name">MongoDB</h2>
                             <p></p>
                         </article>
-                        <article class="card">
-                            <h2>Linux</h2>
+                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <h2 itemprop="name">Linux</h2>
                             <p></p>
                         </article>
-                        <article class="card">
-                            <h2>Java</h2>
+                        <article class="card" itemprop="hasSkill" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <h2 itemprop="name">Java</h2>
                             <p></p>
                         </article>
                     </div>
@@ -98,61 +98,61 @@
                 <section id="certificates">
                     <h1>Certificates</h1>
                     <div class="card-container">
-                        <article class="card">
-                            <h2>Introduction to Cybersecurity</h2>
-                            <p>From Cisco. Issued in May 2024.</p>
+                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                            <h2 itemprop="name">Introduction to Cybersecurity</h2>
+                            <p>From <span itemprop="recognizedBy">Cisco</span>. Issued in <meta itemprop="dateCreated" content="2024-05">May 2024.</p>
                         </article>
-                        <article class="card">
-                            <h2>Python Essentials 1</h2>
-                            <p>From Cisco. Issued in May 2024.</p>
+                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                            <h2 itemprop="name">Python Essentials 1</h2>
+                            <p>From <span itemprop="recognizedBy">Cisco</span>. Issued in <meta itemprop="dateCreated" content="2024-05">May 2024.</p>
                         </article>
-                        <article class="card">
-                            <h2>SCRUM Fundamentals Certified (SFC)</h2>
-                            <p>From SCRUMstudy - Accreditation Body for Scrum and Agile. Issued in March 2024.</p>
+                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                            <h2 itemprop="name">SCRUM Fundamentals Certified (SFC)</h2>
+                            <p>From <span itemprop="recognizedBy">SCRUMstudy - Accreditation Body for Scrum and Agile</span>. Issued in <meta itemprop="dateCreated" content="2024-03">March 2024.</p>
                         </article>
-                        <article class="card">
-                            <h2>NDG Linux Unhatched</h2>
-                            <p>From Network Development Group. Issued in February 2024.</p>
+                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                            <h2 itemprop="name">NDG Linux Unhatched</h2>
+                            <p>From <span itemprop="recognizedBy">Network Development Group</span>. Issued in <meta itemprop="dateCreated" content="2024-02">February 2024.</p>
                         </article>
-                        <article class="card">
-                            <h2>CCNAv7: Switching, Routing and Wireless Essentials</h2>
-                            <p>From Cisco. Issued in November 2023.</p>
+                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                            <h2 itemprop="name">CCNAv7: Switching, Routing and Wireless Essentials</h2>
+                            <p>From <span itemprop="recognizedBy">Cisco</span>. Issued in <meta itemprop="dateCreated" content="2023-11">November 2023.</p>
                         </article>
                     </div>
                 </section>
                 <section id="projects">
                     <h1>Projects</h1>
                     <div class="card-container">
-                        <article class="card">
-                            <h2>None</h2>
-                            <p>None</p>
+                        <article class="card" itemprop="makesOffer" itemscope itemtype="https://schema.org/CreativeWork">
+                            <h2 itemprop="name">None</h2>
+                            <p itemprop="description">None</p>
                         </article>
                     </div>
                 </section>
                 <section id="publications">
                     <h1>Publications</h1>
                     <div class="card-container">
-                        <article class="card">
-                            <h2>None</h2>
-                            <p>None</p>
+                        <article class="card" itemprop="publication" itemscope itemtype="https://schema.org/CreativeWork">
+                            <h2 itemprop="name">None</h2>
+                            <p itemprop="description">None</p>
                         </article>
                     </div>
                 </section>
                 <section id="awards">
                     <h1>Awards</h1>
                     <div class="card-container">
-                        <article class="card">
-                            <h2>None</h2>
-                            <p>None</p>
+                        <article class="card" itemprop="award" itemscope itemtype="https://schema.org/Award">
+                            <h2 itemprop="name">None</h2>
+                            <p itemprop="description">None</p>
                         </article>
                     </div>
                 </section>
                 <section id="testimonials">
                     <h1>Testimonials</h1>
                     <div class="card-container">
-                        <article class="card">
-                            <h2>None</h2>
-                            <p>None</p>
+                        <article class="card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+                            <h2 itemprop="author">None</h2>
+                            <p itemprop="reviewBody">None</p>
                         </article>
                     </div>
                 </section>
@@ -161,19 +161,19 @@
                     <div class="card-container">
                         <article class="card contact-card">
                             <h2>Email</h2>
-                            <p>safic913@gmail.com</p>
+                            <p><a href="mailto:safic913@gmail.com" itemprop="email">safic913@gmail.com</a></p>
                         </article>
                         <article class="card contact-card">
                             <h2>Phone</h2>
-                            <p>+57 304 587 9324</p>
+                            <p itemprop="telephone">+57 304 587 9324</p>
                         </article>
                         <article class="card contact-card">
                             <h2><img class="icon" src="assets/images/LI-In-Bug.png" alt="LinkedIn"></h2>
-                            <p><a href="https://www.linkedin.com/in/andrés-moreno-8b0506264">My Linkedin</a></p>
+                            <p><a href="https://www.linkedin.com/in/andrés-moreno-8b0506264" itemprop="sameAs">My Linkedin</a></p>
                         </article>
                         <article class="card contact-card">
                             <h2><img class="icon" src="assets/images/github-mark-white.svg" alt="GitHub"></h2>
-                            <p><a href="https://www.github.com/andmoreduro">My Github</a></p>
+                            <p><a href="https://www.github.com/andmoreduro" itemprop="sameAs">My Github</a></p>
                         </article>
                     </div>
                 </section>
