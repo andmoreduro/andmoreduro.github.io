@@ -40,31 +40,34 @@
                 <section id="education">
                     <h1>Education</h1>
                     <div class="card-container">
-                        <article class="card" itemscope itemtype="https://schema.org/EducationalOrganizationRole">
-                            <meta itemprop="startDate" content="2013">
-                            <meta itemprop="endDate" content="2018">
-                            <div itemprop="educationalCredentialAwarded">Specialization in Mathematics</div>
-                            <div itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                            <meta itemprop="validFrom" content="2013">
+                            <meta itemprop="dateIssued" content="2018">
+                            <h3 itemprop="name" style="margin-bottom: 0.5em; font-size: 1.1em;">Specialization in Mathematics</h3>
+                            <div itemprop="recognizedBy" itemscope itemtype="https://schema.org/EducationalOrganization">
                                 <h2 itemprop="name">Institución Educativa Antonio Lenis</h2>
-                                <p>From 2013 to 2018.</p>
                             </div>
+                            <p itemprop="temporalCoverage">From 2013 to 2018.</p>
                         </article>
-                        <article class="card" itemscope itemtype="https://schema.org/EducationalOrganizationRole">
-                            <meta itemprop="startDate" content="2019">
-                            <meta itemprop="endDate" content="2021">
-                            <div itemprop="educationalCredentialAwarded">Electronic Engineering degree</div>
-                            <div itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                            <meta itemprop="validFrom" content="2019">
+                            <meta itemprop="validUntil" content="2021"> <!-- Credential not issued, so validUntil -->
+                            <h3 itemprop="name" style="margin-bottom: 0.5em; font-size: 1.1em;">Electronic Engineering degree</h3>
+                            <div itemprop="recognizedBy" itemscope itemtype="https://schema.org/EducationalOrganization">
                                 <h2 itemprop="name">Universidad Nacional de Colombia</h2>
-                                <p>From 2019 to 2021. Unfinished.</p>
                             </div>
+                            <p itemprop="temporalCoverage">From 2019 to 2021. Unfinished.</p>
+                            <p itemprop="description" style="font-style: italic;">Unfinished.</p>
                         </article>
-                        <article class="card" itemscope itemtype="https://schema.org/EducationalOrganizationRole">
-                            <meta itemprop="startDate" content="2021">
-                            <div itemprop="educationalCredentialAwarded">Software Engineering degree</div>
-                            <div itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                            <meta itemprop="validFrom" content="2021">
+                            <!-- No dateIssued or validUntil as it's ongoing -->
+                            <h3 itemprop="name" style="margin-bottom: 0.5em; font-size: 1.1em;">Software Engineering degree</h3>
+                            <div itemprop="recognizedBy" itemscope itemtype="https://schema.org/EducationalOrganization">
                                 <h2 itemprop="name">Universidad Manuela Beltrán</h2>
-                                <p>From 2021 to date.</p>
                             </div>
+                            <p itemprop="temporalCoverage">From 2021 to date.</p>
+                            <p itemprop="description" style="font-style: italic;">Currently pursuing.</p>
                         </article>
                     </div>
                 </section>
@@ -142,12 +145,6 @@
                     <h1>Projects</h1>
                     <div class="card-container">
                         <article class="card" itemscope itemtype="https://schema.org/CreativeWork">
-                            <!-- For "None", linking author is awkward. If actual project, add:
-                            <div itemprop="author" itemscope itemtype="https://schema.org/Person">
-                                <link itemprop="url" href="#person"/>
-                                <meta itemprop="name" content="Andrés Felipe Moreno Durango"/>
-                            </div>
-                            -->
                             <h2 itemprop="name">None</h2>
                             <p itemprop="description">None</p>
                         </article>
@@ -157,7 +154,6 @@
                     <h1>Publications</h1>
                     <div class="card-container">
                         <article class="card" itemscope itemtype="https://schema.org/CreativeWork">
-                             <!-- For "None", linking author is awkward. If actual publication, add author link -->
                             <h2 itemprop="name">None</h2>
                             <p itemprop="description">None</p>
                         </article>
