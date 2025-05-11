@@ -41,33 +41,31 @@
                     <h1>Education</h1>
                     <div class="card-container">
                         <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                            <meta itemprop="validFrom" content="2013">
-                            <meta itemprop="dateIssued" content="2018">
+                            <meta itemprop="dateCreated" content="2018"> <!-- Year credential was awarded -->
+                            <meta itemprop="temporalCoverage" content="2013/2018"> <!-- Study period -->
                             <h3 itemprop="name" style="margin-bottom: 0.5em; font-size: 1.1em;">Specialization in Mathematics</h3>
                             <div itemprop="recognizedBy" itemscope itemtype="https://schema.org/EducationalOrganization">
                                 <h2 itemprop="name">Institución Educativa Antonio Lenis</h2>
                             </div>
-                            <p itemprop="temporalCoverage">From 2013 to 2018.</p>
+                            <p>From 2013 to 2018.</p>
                         </article>
                         <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                            <meta itemprop="validFrom" content="2019">
-                            <meta itemprop="validUntil" content="2021"> <!-- Credential not issued, so validUntil -->
+                            <!-- No dateCreated as it was unfinished/not awarded -->
+                            <meta itemprop="temporalCoverage" content="2019/2021"> <!-- Study period -->
                             <h3 itemprop="name" style="margin-bottom: 0.5em; font-size: 1.1em;">Electronic Engineering degree</h3>
                             <div itemprop="recognizedBy" itemscope itemtype="https://schema.org/EducationalOrganization">
                                 <h2 itemprop="name">Universidad Nacional de Colombia</h2>
                             </div>
-                            <p itemprop="temporalCoverage">From 2019 to 2021. Unfinished.</p>
-                            <p itemprop="description" style="font-style: italic;">Unfinished.</p>
+                            <p itemprop="description" style="font-style: italic;">From 2019 to 2021. Unfinished.</p>
                         </article>
                         <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                            <meta itemprop="validFrom" content="2021">
-                            <!-- No dateIssued or validUntil as it's ongoing -->
+                            <!-- No dateCreated as it's ongoing -->
+                            <meta itemprop="temporalCoverage" content="2021/"> <!-- Study period (ongoing from 2021) -->
                             <h3 itemprop="name" style="margin-bottom: 0.5em; font-size: 1.1em;">Software Engineering degree</h3>
                             <div itemprop="recognizedBy" itemscope itemtype="https://schema.org/EducationalOrganization">
                                 <h2 itemprop="name">Universidad Manuela Beltrán</h2>
                             </div>
-                            <p itemprop="temporalCoverage">From 2021 to date.</p>
-                            <p itemprop="description" style="font-style: italic;">Currently pursuing.</p>
+                            <p itemprop="description" style="font-style: italic;">From 2021 to date.</p>
                         </article>
                     </div>
                 </section>
