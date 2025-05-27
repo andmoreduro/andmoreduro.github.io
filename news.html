@@ -1,123 +1,361 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" itemscope itemtype="https://schema.org/WebPage">
     <head>
         <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-KZWMBMW7');</script>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-KZWMBMW7");
+        </script>
         <!-- End Google Tag Manager -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://rsms.me/">
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
-        <link rel="stylesheet" href="css/main.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+        <link rel="stylesheet" href="css/main.css" />
         <title>My News - Latest Updates & Articles</title>
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZWMBMW7"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-KZWMBMW7"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
         <!-- End Google Tag Manager (noscript) -->
+        <button
+            class="hamburger-button"
+            id="hamburger-button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="nav-panel"
+        >
+            <span class="hamburger-icon"></span>
+        </button>
+
         <div class="container">
-            <nav class="nav-panel">
+            <nav id="nav-panel" class="nav-panel">
+                <button
+                    class="close-nav-button"
+                    id="close-nav-button"
+                    aria-label="Close navigation"
+                >
+                    ×
+                </button>
+
                 <ul>
-                    <li><a class="nav-link" href="index.html#introduction">Introduction</a></li>
-                    <li><a class="nav-link" href="index.html#education">Education</a></li>
-                    <li><a class="nav-link" href="index.html#experience">Experience</a></li>
-                    <li><a class="nav-link" href="index.html#skills">Skills</a></li>
-                    <li><a class="nav-link" href="index.html#certificates">Certificates</a></li>
-                    <li><a class="nav-link" href="index.html#projects">Projects</a></li>
-                    <li><a class="nav-link" href="index.html#publications">Publications</a></li>
-                    <li><a class="nav-link" href="index.html#awards">Awards</a></li>
-                    <li><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
-                    <li><a class="nav-link" href="index.html#contact-information">Contact</a></li>
+                    <li>
+                        <a class="nav-link" href="index.html#introduction"
+                            >Introduction</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#education"
+                            >Education</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#experience"
+                            >Experience</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#certificates"
+                            >Certificates</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#projects"
+                            >Projects</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#publications"
+                            >Publications</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#awards">Awards</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="index.html#testimonials"
+                            >Testimonials</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-link"
+                            href="index.html#contact-information"
+                            >Contact</a
+                        >
+                    </li>
                     <li><a class="nav-link" href="store.html">Store</a></li>
-                    <li><a class="nav-link active-section" href="#news">News</a></li>
+                    <li>
+                        <a class="nav-link active-section" href="#news">News</a>
+                    </li>
                 </ul>
             </nav>
             <main class="content">
                 <section id="news">
                     <h1>Latest News</h1>
                     <div class="card-container">
-                        <article class="card" itemscope itemtype="https://schema.org/Article">
-                            <h2 itemprop="headline">Completing Advanced Python Certification with Cisco</h2>
-                            <meta itemprop="author" content="Andrés Felipe Moreno Durango">
-                            <meta itemprop="datePublished" content="2024-12-15">
-                            <meta itemprop="articleSection" content="Education">
+                        <article
+                            class="card"
+                            itemscope
+                            itemtype="https://schema.org/Article"
+                        >
+                            <h2 itemprop="headline">
+                                Completing Advanced Python Certification with
+                                Cisco
+                            </h2>
+                            <meta
+                                itemprop="author"
+                                content="Andrés Felipe Moreno Durango"
+                            />
+                            <meta
+                                itemprop="datePublished"
+                                content="2024-12-15"
+                            />
+                            <meta
+                                itemprop="articleSection"
+                                content="Education"
+                            />
                             <p><em>December 15, 2024</em></p>
                             <div itemprop="articleBody">
-                                <p>Just completed the Python Essentials 2 certification from Cisco Networking Academy. This advanced course covered object-oriented programming, file handling, and advanced data structures. The knowledge gained will significantly enhance my backend development capabilities with Django and FastAPI.</p>
-                                <p>Next up: preparing for the PCAP (Python Certified Associate Programmer) exam to further validate my Python expertise.</p>
+                                <p>
+                                    Just completed the Python Essentials 2
+                                    certification from Cisco Networking Academy.
+                                    This advanced course covered object-oriented
+                                    programming, file handling, and advanced
+                                    data structures. The knowledge gained will
+                                    significantly enhance my backend development
+                                    capabilities with Django and FastAPI.
+                                </p>
+                                <p>
+                                    Next up: preparing for the PCAP (Python
+                                    Certified Associate Programmer) exam to
+                                    further validate my Python expertise.
+                                </p>
                             </div>
                         </article>
 
-                        <article class="card" itemscope itemtype="https://schema.org/Article">
-                            <h2 itemprop="headline">New FastAPI Project: Real-Time Chat Application</h2>
-                            <meta itemprop="author" content="Andrés Felipe Moreno Durango">
-                            <meta itemprop="datePublished" content="2024-12-10">
-                            <meta itemprop="articleSection" content="Projects">
+                        <article
+                            class="card"
+                            itemscope
+                            itemtype="https://schema.org/Article"
+                        >
+                            <h2 itemprop="headline">
+                                New FastAPI Project: Real-Time Chat Application
+                            </h2>
+                            <meta
+                                itemprop="author"
+                                content="Andrés Felipe Moreno Durango"
+                            />
+                            <meta
+                                itemprop="datePublished"
+                                content="2024-12-10"
+                            />
+                            <meta
+                                itemprop="articleSection"
+                                content="Projects"
+                            />
                             <p><em>December 10, 2024</em></p>
                             <div itemprop="articleBody">
-                                <p>Launched development of a real-time chat application using FastAPI and WebSockets. The project demonstrates modern asynchronous programming patterns and includes features like user authentication, message persistence with MongoDB, and real-time notifications.</p>
-                                <p>The application showcases integration between FastAPI backend, React frontend, and proper WebSocket implementation for instant messaging capabilities.</p>
+                                <p>
+                                    Launched development of a real-time chat
+                                    application using FastAPI and WebSockets.
+                                    The project demonstrates modern asynchronous
+                                    programming patterns and includes features
+                                    like user authentication, message
+                                    persistence with MongoDB, and real-time
+                                    notifications.
+                                </p>
+                                <p>
+                                    The application showcases integration
+                                    between FastAPI backend, React frontend, and
+                                    proper WebSocket implementation for instant
+                                    messaging capabilities.
+                                </p>
                             </div>
                         </article>
 
-                        <article class="card" itemscope itemtype="https://schema.org/Article">
-                            <h2 itemprop="headline">Speaking at Local Developer Meetup: "Database Optimization Strategies"</h2>
-                            <meta itemprop="author" content="Andrés Felipe Moreno Durango">
-                            <meta itemprop="datePublished" content="2024-12-05">
-                            <meta itemprop="articleSection" content="Speaking">
+                        <article
+                            class="card"
+                            itemscope
+                            itemtype="https://schema.org/Article"
+                        >
+                            <h2 itemprop="headline">
+                                Speaking at Local Developer Meetup: "Database
+                                Optimization Strategies"
+                            </h2>
+                            <meta
+                                itemprop="author"
+                                content="Andrés Felipe Moreno Durango"
+                            />
+                            <meta
+                                itemprop="datePublished"
+                                content="2024-12-05"
+                            />
+                            <meta
+                                itemprop="articleSection"
+                                content="Speaking"
+                            />
                             <p><em>December 5, 2024</em></p>
                             <div itemprop="articleBody">
-                                <p>Presented at the Sincelejo Developers Meetup on database optimization strategies for web applications. The talk covered indexing best practices, query optimization techniques, and when to choose between SQL and NoSQL solutions.</p>
-                                <p>Great engagement from fellow developers with practical questions about scaling database performance in production environments.</p>
+                                <p>
+                                    Presented at the Sincelejo Developers Meetup
+                                    on database optimization strategies for web
+                                    applications. The talk covered indexing best
+                                    practices, query optimization techniques,
+                                    and when to choose between SQL and NoSQL
+                                    solutions.
+                                </p>
+                                <p>
+                                    Great engagement from fellow developers with
+                                    practical questions about scaling database
+                                    performance in production environments.
+                                </p>
                             </div>
                         </article>
 
-                        <article class="card" itemscope itemtype="https://schema.org/Article">
-                            <h2 itemprop="headline">Contributing to Open Source: Django REST Framework Extension</h2>
-                            <meta itemprop="author" content="Andrés Felipe Moreno Durango">
-                            <meta itemprop="datePublished" content="2024-11-28">
-                            <meta itemprop="articleSection" content="Open Source">
+                        <article
+                            class="card"
+                            itemscope
+                            itemtype="https://schema.org/Article"
+                        >
+                            <h2 itemprop="headline">
+                                Contributing to Open Source: Django REST
+                                Framework Extension
+                            </h2>
+                            <meta
+                                itemprop="author"
+                                content="Andrés Felipe Moreno Durango"
+                            />
+                            <meta
+                                itemprop="datePublished"
+                                content="2024-11-28"
+                            />
+                            <meta
+                                itemprop="articleSection"
+                                content="Open Source"
+                            />
                             <p><em>November 28, 2024</em></p>
                             <div itemprop="articleBody">
-                                <p>Made my first significant contribution to an open source project by developing a Django REST Framework extension for automatic API documentation generation. The package helps developers create comprehensive API docs with minimal configuration.</p>
-                                <p>The contribution has been well-received by the community and is now being used by several development teams worldwide.</p>
+                                <p>
+                                    Made my first significant contribution to an
+                                    open source project by developing a Django
+                                    REST Framework extension for automatic API
+                                    documentation generation. The package helps
+                                    developers create comprehensive API docs
+                                    with minimal configuration.
+                                </p>
+                                <p>
+                                    The contribution has been well-received by
+                                    the community and is now being used by
+                                    several development teams worldwide.
+                                </p>
                             </div>
                         </article>
 
-                        <article class="card" itemscope itemtype="https://schema.org/Article">
-                            <h2 itemprop="headline">Completing University Software Engineering Capstone Project</h2>
-                            <meta itemprop="author" content="Andrés Felipe Moreno Durango">
-                            <meta itemprop="datePublished" content="2024-11-20">
-                            <meta itemprop="articleSection" content="Education">
+                        <article
+                            class="card"
+                            itemscope
+                            itemtype="https://schema.org/Article"
+                        >
+                            <h2 itemprop="headline">
+                                Completing University Software Engineering
+                                Capstone Project
+                            </h2>
+                            <meta
+                                itemprop="author"
+                                content="Andrés Felipe Moreno Durango"
+                            />
+                            <meta
+                                itemprop="datePublished"
+                                content="2024-11-20"
+                            />
+                            <meta
+                                itemprop="articleSection"
+                                content="Education"
+                            />
                             <p><em>November 20, 2024</em></p>
                             <div itemprop="articleBody">
-                                <p>Successfully defended my capstone project: a full-stack inventory management system for small businesses. The application was built using Django, React, and PostgreSQL, implementing features like real-time inventory tracking, automated reorder alerts, and comprehensive reporting.</p>
-                                <p>The project received top marks and demonstrated practical application of software engineering principles learned throughout my degree program.</p>
+                                <p>
+                                    Successfully defended my capstone project: a
+                                    full-stack inventory management system for
+                                    small businesses. The application was built
+                                    using Django, React, and PostgreSQL,
+                                    implementing features like real-time
+                                    inventory tracking, automated reorder
+                                    alerts, and comprehensive reporting.
+                                </p>
+                                <p>
+                                    The project received top marks and
+                                    demonstrated practical application of
+                                    software engineering principles learned
+                                    throughout my degree program.
+                                </p>
                             </div>
                         </article>
 
-                        <article class="card" itemscope itemtype="https://schema.org/Article">
-                            <h2 itemprop="headline">Joining Local Tech Community as Volunteer Mentor</h2>
-                            <meta itemprop="author" content="Andrés Felipe Moreno Durango">
-                            <meta itemprop="datePublished" content="2024-11-15">
-                            <meta itemprop="articleSection" content="Community">
+                        <article
+                            class="card"
+                            itemscope
+                            itemtype="https://schema.org/Article"
+                        >
+                            <h2 itemprop="headline">
+                                Joining Local Tech Community as Volunteer Mentor
+                            </h2>
+                            <meta
+                                itemprop="author"
+                                content="Andrés Felipe Moreno Durango"
+                            />
+                            <meta
+                                itemprop="datePublished"
+                                content="2024-11-15"
+                            />
+                            <meta
+                                itemprop="articleSection"
+                                content="Community"
+                            />
                             <p><em>November 15, 2024</em></p>
                             <div itemprop="articleBody">
-                                <p>Started volunteering as a coding mentor for new developers in the local tech community. Helping aspiring programmers learn Python fundamentals, web development basics, and career guidance in software engineering.</p>
-                                <p>It's incredibly rewarding to give back to the community and help others begin their journey in technology.</p>
+                                <p>
+                                    Started volunteering as a coding mentor for
+                                    new developers in the local tech community.
+                                    Helping aspiring programmers learn Python
+                                    fundamentals, web development basics, and
+                                    career guidance in software engineering.
+                                </p>
+                                <p>
+                                    It's incredibly rewarding to give back to
+                                    the community and help others begin their
+                                    journey in technology.
+                                </p>
                             </div>
                         </article>
                     </div>
                 </section>
             </main>
         </div>
-        <script src="js/nav-link.js"></script>
         <script src="js/scroll-spy.js"></script>
+        <script src="js/hamburger-menu.js"></script>
     </body>
 </html>

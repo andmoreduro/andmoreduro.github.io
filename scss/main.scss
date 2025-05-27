@@ -27,16 +27,89 @@ body {
 h1 {
     font-size: 5em;
     text-align: center;
+    color: variables.$text;
 }
 
 a {
     color: variables.$accent;
+    text-decoration: none;
 }
 
 .container {
     display: flex;
     min-height: 100svh;
-    height: 100svh;
+}
+
+
+.hamburger-button {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1005;
+    background: variables.$surface1;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: variables.$border-radius;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+    .hamburger-icon {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: variables.$text;
+        position: relative;
+        transition: background-color 0.3s ease-in-out;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: variables.$text;
+            left: 0;
+            transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+        }
+
+        &::before {
+            top: -7px;
+        }
+
+        &::after {
+            top: 7px;
+        }
+    }
+
+    &.active .hamburger-icon {
+        background-color: transparent;
+
+        &::before {
+            transform: rotate(45deg);
+            top: 0;
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+            top: 0;
+        }
+    }
+}
+
+.close-nav-button {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: variables.$text;
+    font-size: 2.5em;
+    line-height: 1;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1002;
 }
 
 .nav-panel {
@@ -44,10 +117,12 @@ a {
     background: linear-gradient(to right, variables.$surface1, variables.$base);
     display: flex;
     flex: 1;
+    max-width: 320px;
     height: 100svh;
     justify-content: center;
     overflow-y: auto;
     overflow-x: hidden;
+    transition: transform 0.3s ease-in-out;
 
     ul {
         list-style: none;
@@ -86,39 +161,45 @@ a {
     gap: variables.$section-gap;
     max-height: 100svh;
     overflow: auto;
-    padding: variables.$section-gap 0;
+
+    padding: 2em variables.$card-padding;
+
 }
 
 .introduction-container {
     display: flex;
     flex-direction: column;
+    h1 {
+        color: variables.$text;
+    }
 }
 
 .introduction-content-container {
     align-items: center;
     display: flex;
     gap: variables.$paragraph-skip;
+    padding: 0 variables.$card-padding;
 }
 
 .introduction-content {
     display: flex;
     flex-direction: column;
     gap: variables.$paragraph-skip;
+    color: variables.$text;
+    p {
+        color: variables.$subtext0;
+    }
 }
 
 .image-of-me {
     border-radius: 50%;
     width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .icon {
     width: 50px;
-}
-
-.education-container {
-    background-color: variables.$surface0;
-    display: flex;
-    flex-direction: column;
 }
 
 .card-container {
@@ -132,10 +213,128 @@ a {
     background-color: variables.$surface0;
     border-radius: variables.$border-radius;
     padding: variables.$card-padding;
+    color: variables.$text;
+    h2, h3 {
+        color: variables.$text;
+    }
+    p {
+        color: variables.$subtext0;
+    }
 }
 
 .contact-card {
     display: flex;
     align-items: center;
     gap: variables.$card-padding;
+}
+
+
+@media (max-width: #{variables.$mobile-breakpoint}) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .introduction-container h1,
+    section > h1 {
+        font-size: 2em;
+    }
+
+
+    .hamburger-button {
+        display: block;
+    }
+
+    .nav-panel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 85%;
+        max-width: 300px;
+        height: 100vh;
+        background: variables.$base;
+        border-right: 1px solid variables.$surface1;
+        transform: translateX(-100%);
+        z-index: 1000;
+        padding-top: 70px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex: none;
+
+        &.nav-open {
+            transform: translateX(0);
+            box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+        }
+
+        .close-nav-button {
+            display: block;
+        }
+
+        ul {
+            padding: 0;
+            width: 100%;
+        }
+
+        li {
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid rgba(variables.$text, 0.1);
+
+            &:first-child {
+                border-top: 1px solid rgba(variables.$text, 0.1);
+            }
+        }
+
+        .nav-link {
+            font-size: calc(#{variables.$nav-link-font-size} * 0.7);
+            display: block;
+            padding: 15px 25px;
+            transform: translateX(0);
+
+            &:hover {
+                background-color: rgba(variables.$accent, 0.1);
+            }
+        }
+
+        .active-section {
+            transform: translateX(0);
+            background-color: rgba(variables.$accent, 0.2);
+            font-weight: bold;
+        }
+    }
+
+    .content {
+        flex: 1;
+        width: 100%;
+        padding: 1.5em 15px;
+
+    }
+
+    .introduction-content-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+
+        .image-of-me {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: variables.$card-padding 0;
+    }
+
+    .contact-card {
+        align-items: center;
+        gap: calc(#{variables.$card-padding} / 2);
+
+        .icon {
+            width: 35px;
+        }
+    }
+}
+
+
+body.no-scroll {
+    overflow: hidden;
 }

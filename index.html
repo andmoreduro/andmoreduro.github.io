@@ -1,39 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" itemscope itemtype="https://schema.org/ProfilePage">
     <head>
         <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-KZWMBMW7');</script>
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-KZWMBMW7");
+        </script>
         <!-- End Google Tag Manager -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://rsms.me/">
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
-        <link rel="stylesheet" href="css/main.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+        <link rel="stylesheet" href="css/main.css" />
         <title>My Portfolio</title>
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZWMBMW7"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-KZWMBMW7"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <div class="container" itemprop="mainEntity" itemscope itemtype="https://schema.org/Person" id="person">
-            <meta itemprop="name" content="Andrés Felipe Moreno Durango">
-            <nav class="nav-panel">
+
+        <button
+            class="hamburger-button"
+            id="hamburger-button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="nav-panel"
+        >
+            <span class="hamburger-icon"></span>
+        </button>
+
+        <div
+            class="container"
+            itemprop="mainEntity"
+            itemscope
+            itemtype="https://schema.org/Person"
+            id="person"
+        >
+            <meta itemprop="name" content="Andrés Felipe Moreno Durango" />
+            <nav id="nav-panel" class="nav-panel">
+                <button
+                    class="close-nav-button"
+                    id="close-nav-button"
+                    aria-label="Close navigation"
+                >
+                    ×
+                </button>
+
                 <ul>
-                    <li><a class="nav-link active-section" href="#introduction">Introduction</a></li>
+                    <li>
+                        <a class="nav-link active-section" href="#introduction"
+                            >Introduction</a
+                        >
+                    </li>
                     <li><a class="nav-link" href="#education">Education</a></li>
-                    <li><a class="nav-link" href="#experience">Experience</a></li>
+                    <li>
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
                     <li><a class="nav-link" href="#skills">Skills</a></li>
-                    <li><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li>
+                        <a class="nav-link" href="#certificates"
+                            >Certificates</a
+                        >
+                    </li>
                     <li><a class="nav-link" href="#projects">Projects</a></li>
-                    <li><a class="nav-link" href="#publications">Publications</a></li>
+                    <li>
+                        <a class="nav-link" href="#publications"
+                            >Publications</a
+                        >
+                    </li>
                     <li><a class="nav-link" href="#awards">Awards</a></li>
-                    <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                    <li><a class="nav-link" href="#contact-information">Contact information</a></li>
+                    <li>
+                        <a class="nav-link" href="#testimonials"
+                            >Testimonials</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contact-information"
+                            >Contact information</a
+                        >
+                    </li>
                     <li><a class="nav-link" href="store.html">Store</a></li>
                     <li><a class="nav-link" href="news.html">News</a></li>
                 </ul>
@@ -42,40 +106,123 @@
                 <section class="introduction-container" id="introduction">
                     <h1>Introduction</h1>
                     <div class="introduction-content-container">
-                        <img class="image-of-me" src="assets/images/me.jpg" alt="Portrait photo of Andrés Felipe Moreno Durango, the author of this website." itemprop="image">
+                        <img
+                            class="image-of-me"
+                            src="assets/images/me.avif"
+                            alt="Portrait photo of Andrés Felipe Moreno Durango, the author of this website."
+                            itemprop="image"
+                        />
                         <div class="introduction-content">
-                            <p>In Colombia, in the city of <span itemprop="birthPlace">Sincelejo</span>, in a poor neighboorhood a little boy was born, and his name was <span itemprop="givenName">Andrés Felipe</span> <span itemprop="familyName">Moreno Durango</span>.</p>
-                            <p itemprop="description">I am a Software Engineering student with strong teamwork, effective communication and problem solving skills. I stand out for bringing innovative perspectives that positively impact project development. I have doubled my productivity by mastering typing techniques and I have an upper-intermediate level of English, I prefer collaborative and multicultural environments.</p>
+                            <p>
+                                In Colombia, in the city of
+                                <span itemprop="birthPlace">Sincelejo</span>, in
+                                a poor neighboorhood a little boy was born, and
+                                his name was
+                                <span itemprop="givenName">Andrés Felipe</span>
+                                <span itemprop="familyName">Moreno Durango</span
+                                >.
+                            </p>
+                            <p itemprop="description">
+                                I am a Software Engineering student with strong
+                                teamwork, effective communication and problem
+                                solving skills. I stand out for bringing
+                                innovative perspectives that positively impact
+                                project development. I have doubled my
+                                productivity by mastering typing techniques and
+                                I have an upper-intermediate level of English, I
+                                prefer collaborative and multicultural
+                                environments.
+                            </p>
                         </div>
                     </div>
                 </section>
                 <section id="education">
                     <h1>Education</h1>
                     <div class="card-container">
-                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                            <meta itemprop="dateCreated" content="2018"> <!-- Year credential was awarded -->
-                            <meta itemprop="temporalCoverage" content="2013/2018"> <!-- Study period -->
-                            <h3 itemprop="name" style="margin-bottom: 0.5em; font-size: 1.1em;">High School Diploma with Emphasis in Mathematics</h3>
-                            <div itemprop="recognizedBy" itemscope itemtype="https://schema.org/EducationalOrganization">
-                                <h2 itemprop="name">Institución Educativa Antonio Lenis</h2>
+                        <article
+                            class="card"
+                            itemprop="hasCredential"
+                            itemscope
+                            itemtype="https://schema.org/EducationalOccupationalCredential"
+                        >
+                            <meta itemprop="dateCreated" content="2018" />
+                            <!-- Year credential was awarded -->
+                            <meta
+                                itemprop="temporalCoverage"
+                                content="2013/2018"
+                            />
+                            <!-- Study period -->
+                            <h3
+                                itemprop="name"
+                                style="margin-bottom: 0.5em; font-size: 1.1em"
+                            >
+                                High School Diploma with Emphasis in Mathematics
+                            </h3>
+                            <div
+                                itemprop="recognizedBy"
+                                itemscope
+                                itemtype="https://schema.org/EducationalOrganization"
+                            >
+                                <h2 itemprop="name">
+                                    Institución Educativa Antonio Lenis
+                                </h2>
                             </div>
                             <p>From 2013 to 2018.</p>
                         </article>
-                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                        <article
+                            class="card"
+                            itemprop="hasCredential"
+                            itemscope
+                            itemtype="https://schema.org/EducationalOccupationalCredential"
+                        >
                             <!-- No dateCreated as it was unfinished/not awarded -->
-                            <meta itemprop="temporalCoverage" content="2019/2021"> <!-- Study period -->
-                            <h3 itemprop="name" style="margin-bottom: 0.5em; font-size: 1.1em;">Electronic Engineering degree</h3>
-                            <div itemprop="recognizedBy" itemscope itemtype="https://schema.org/EducationalOrganization">
-                                <h2 itemprop="name">Universidad Nacional de Colombia</h2>
+                            <meta
+                                itemprop="temporalCoverage"
+                                content="2019/2021"
+                            />
+                            <!-- Study period -->
+                            <h3
+                                itemprop="name"
+                                style="margin-bottom: 0.5em; font-size: 1.1em"
+                            >
+                                Electronic Engineering degree
+                            </h3>
+                            <div
+                                itemprop="recognizedBy"
+                                itemscope
+                                itemtype="https://schema.org/EducationalOrganization"
+                            >
+                                <h2 itemprop="name">
+                                    Universidad Nacional de Colombia
+                                </h2>
                             </div>
-                            <p itemprop="description">From 2019 to 2021.  <em>Unfinished</em>.</p>
+                            <p itemprop="description">
+                                From 2019 to 2021. <em>Unfinished</em>.
+                            </p>
                         </article>
-                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                        <article
+                            class="card"
+                            itemprop="hasCredential"
+                            itemscope
+                            itemtype="https://schema.org/EducationalOccupationalCredential"
+                        >
                             <!-- No dateCreated as it's ongoing -->
-                            <meta itemprop="temporalCoverage" content="2021/"> <!-- Study period (ongoing from 2021) -->
-                            <h3 itemprop="name" style="margin-bottom: 0.5em; font-size: 1.1em;">Software Engineering degree</h3>
-                            <div itemprop="recognizedBy" itemscope itemtype="https://schema.org/EducationalOrganization">
-                                <h2 itemprop="name">Universidad Manuela Beltrán</h2>
+                            <meta itemprop="temporalCoverage" content="2021/" />
+                            <!-- Study period (ongoing from 2021) -->
+                            <h3
+                                itemprop="name"
+                                style="margin-bottom: 0.5em; font-size: 1.1em"
+                            >
+                                Software Engineering degree
+                            </h3>
+                            <div
+                                itemprop="recognizedBy"
+                                itemscope
+                                itemtype="https://schema.org/EducationalOrganization"
+                            >
+                                <h2 itemprop="name">
+                                    Universidad Manuela Beltrán
+                                </h2>
                             </div>
                             <p itemprop="description">From 2021 to date.</p>
                         </article>
@@ -84,8 +231,16 @@
                 <section id="experience">
                     <h1>Experience</h1>
                     <div class="card-container">
-                        <article class="card" itemprop="hasOccupation" itemscope itemtype="https://schema.org/Occupation">
-                            <meta itemprop="name" content="No Work Experience">
+                        <article
+                            class="card"
+                            itemprop="hasOccupation"
+                            itemscope
+                            itemtype="https://schema.org/Occupation"
+                        >
+                            <meta
+                                itemprop="name"
+                                content="No Work Experience"
+                            />
                             <h2>None</h2>
                             <p itemprop="description">None</p>
                         </article>
@@ -93,33 +248,72 @@
                 </section>
                 <section id="skills">
                     <h1>Skills</h1>
-                    <div itemprop="knowsAbout" itemscope itemtype="https://schema.org/ItemList">
+                    <div
+                        itemprop="knowsAbout"
+                        itemscope
+                        itemtype="https://schema.org/ItemList"
+                    >
                         <div class="card-container">
-                            <article class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <article
+                                class="card"
+                                itemprop="itemListElement"
+                                itemscope
+                                itemtype="https://schema.org/DefinedTerm"
+                            >
                                 <h2 itemprop="name">Django</h2>
                                 <p></p>
                             </article>
-                            <article class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <article
+                                class="card"
+                                itemprop="itemListElement"
+                                itemscope
+                                itemtype="https://schema.org/DefinedTerm"
+                            >
                                 <h2 itemprop="name">FastAPI</h2>
                                 <p></p>
                             </article>
-                            <article class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <article
+                                class="card"
+                                itemprop="itemListElement"
+                                itemscope
+                                itemtype="https://schema.org/DefinedTerm"
+                            >
                                 <h2 itemprop="name">React</h2>
                                 <p></p>
                             </article>
-                            <article class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <article
+                                class="card"
+                                itemprop="itemListElement"
+                                itemscope
+                                itemtype="https://schema.org/DefinedTerm"
+                            >
                                 <h2 itemprop="name">Relational Databases</h2>
                                 <p></p>
                             </article>
-                            <article class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <article
+                                class="card"
+                                itemprop="itemListElement"
+                                itemscope
+                                itemtype="https://schema.org/DefinedTerm"
+                            >
                                 <h2 itemprop="name">MongoDB</h2>
                                 <p></p>
                             </article>
-                            <article class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <article
+                                class="card"
+                                itemprop="itemListElement"
+                                itemscope
+                                itemtype="https://schema.org/DefinedTerm"
+                            >
                                 <h2 itemprop="name">Linux</h2>
                                 <p></p>
                             </article>
-                            <article class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/DefinedTerm">
+                            <article
+                                class="card"
+                                itemprop="itemListElement"
+                                itemscope
+                                itemtype="https://schema.org/DefinedTerm"
+                            >
                                 <h2 itemprop="name">Java</h2>
                                 <p></p>
                             </article>
@@ -129,32 +323,133 @@
                 <section id="certificates">
                     <h1>Certificates</h1>
                     <div class="card-container">
-                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                            <h2 itemprop="name">Introduction to Cybersecurity</h2>
-                            <p>From <span itemprop="recognizedBy" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Cisco</span></span>. Issued in <meta itemprop="dateCreated" content="2024-05">May 2024.</p>
+                        <article
+                            class="card"
+                            itemprop="hasCredential"
+                            itemscope
+                            itemtype="https://schema.org/EducationalOccupationalCredential"
+                        >
+                            <h2 itemprop="name">
+                                Introduction to Cybersecurity
+                            </h2>
+                            <p>
+                                From
+                                <span
+                                    itemprop="recognizedBy"
+                                    itemscope
+                                    itemtype="https://schema.org/Organization"
+                                    ><span itemprop="name">Cisco</span></span
+                                >. Issued in
+                                <meta
+                                    itemprop="dateCreated"
+                                    content="2024-05"
+                                />May 2024.
+                            </p>
                         </article>
-                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                        <article
+                            class="card"
+                            itemprop="hasCredential"
+                            itemscope
+                            itemtype="https://schema.org/EducationalOccupationalCredential"
+                        >
                             <h2 itemprop="name">Python Essentials 1</h2>
-                            <p>From <span itemprop="recognizedBy" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Cisco</span></span>. Issued in <meta itemprop="dateCreated" content="2024-05">May 2024.</p>
+                            <p>
+                                From
+                                <span
+                                    itemprop="recognizedBy"
+                                    itemscope
+                                    itemtype="https://schema.org/Organization"
+                                    ><span itemprop="name">Cisco</span></span
+                                >. Issued in
+                                <meta
+                                    itemprop="dateCreated"
+                                    content="2024-05"
+                                />May 2024.
+                            </p>
                         </article>
-                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                            <h2 itemprop="name">SCRUM Fundamentals Certified (SFC)</h2>
-                            <p>From <span itemprop="recognizedBy" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">SCRUMstudy - Accreditation Body for Scrum and Agile</span></span>. Issued in <meta itemprop="dateCreated" content="2024-03">March 2024.</p>
+                        <article
+                            class="card"
+                            itemprop="hasCredential"
+                            itemscope
+                            itemtype="https://schema.org/EducationalOccupationalCredential"
+                        >
+                            <h2 itemprop="name">
+                                SCRUM Fundamentals Certified (SFC)
+                            </h2>
+                            <p>
+                                From
+                                <span
+                                    itemprop="recognizedBy"
+                                    itemscope
+                                    itemtype="https://schema.org/Organization"
+                                    ><span itemprop="name"
+                                        >SCRUMstudy - Accreditation Body for
+                                        Scrum and Agile</span
+                                    ></span
+                                >. Issued in
+                                <meta
+                                    itemprop="dateCreated"
+                                    content="2024-03"
+                                />March 2024.
+                            </p>
                         </article>
-                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                        <article
+                            class="card"
+                            itemprop="hasCredential"
+                            itemscope
+                            itemtype="https://schema.org/EducationalOccupationalCredential"
+                        >
                             <h2 itemprop="name">NDG Linux Unhatched</h2>
-                            <p>From <span itemprop="recognizedBy" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Network Development Group</span></span>. Issued in <meta itemprop="dateCreated" content="2024-02">February 2024.</p>
+                            <p>
+                                From
+                                <span
+                                    itemprop="recognizedBy"
+                                    itemscope
+                                    itemtype="https://schema.org/Organization"
+                                    ><span itemprop="name"
+                                        >Network Development Group</span
+                                    ></span
+                                >. Issued in
+                                <meta
+                                    itemprop="dateCreated"
+                                    content="2024-02"
+                                />February 2024.
+                            </p>
                         </article>
-                        <article class="card" itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                            <h2 itemprop="name">CCNAv7: Switching, Routing and Wireless Essentials</h2>
-                            <p>From <span itemprop="recognizedBy" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">Cisco</span></span>. Issued in <meta itemprop="dateCreated" content="2023-11">November 2023.</p>
+                        <article
+                            class="card"
+                            itemprop="hasCredential"
+                            itemscope
+                            itemtype="https://schema.org/EducationalOccupationalCredential"
+                        >
+                            <h2 itemprop="name">
+                                CCNAv7: Switching, Routing and Wireless
+                                Essentials
+                            </h2>
+                            <p>
+                                From
+                                <span
+                                    itemprop="recognizedBy"
+                                    itemscope
+                                    itemtype="https://schema.org/Organization"
+                                    ><span itemprop="name">Cisco</span></span
+                                >. Issued in
+                                <meta
+                                    itemprop="dateCreated"
+                                    content="2023-11"
+                                />November 2023.
+                            </p>
                         </article>
                     </div>
                 </section>
                 <section id="projects">
                     <h1>Projects</h1>
                     <div class="card-container">
-                        <article class="card" itemscope itemtype="https://schema.org/CreativeWork">
+                        <article
+                            class="card"
+                            itemscope
+                            itemtype="https://schema.org/CreativeWork"
+                        >
                             <h2 itemprop="name">None</h2>
                             <p itemprop="description">None</p>
                         </article>
@@ -163,7 +458,11 @@
                 <section id="publications">
                     <h1>Publications</h1>
                     <div class="card-container">
-                        <article class="card" itemscope itemtype="https://schema.org/CreativeWork">
+                        <article
+                            class="card"
+                            itemscope
+                            itemtype="https://schema.org/CreativeWork"
+                        >
                             <h2 itemprop="name">None</h2>
                             <p itemprop="description">None</p>
                         </article>
@@ -180,12 +479,27 @@
                 <section id="testimonials">
                     <h1>Testimonials</h1>
                     <div class="card-container">
-                        <article class="card" itemscope itemtype="https://schema.org/Review">
-                            <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/Person">
-                                <link itemprop="url" href="#person"/>
-                                <meta itemprop="name" content="Andrés Felipe Moreno Durango"/>
+                        <article
+                            class="card"
+                            itemscope
+                            itemtype="https://schema.org/Review"
+                        >
+                            <div
+                                itemprop="itemReviewed"
+                                itemscope
+                                itemtype="https://schema.org/Person"
+                            >
+                                <link itemprop="url" href="#person" />
+                                <meta
+                                    itemprop="name"
+                                    content="Andrés Felipe Moreno Durango"
+                                />
                             </div>
-                            <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <div
+                                itemprop="author"
+                                itemscope
+                                itemtype="https://schema.org/Person"
+                            >
                                 <h2 itemprop="name">None</h2>
                             </div>
                             <p itemprop="reviewBody">None</p>
@@ -197,7 +511,13 @@
                     <div class="card-container">
                         <article class="card contact-card">
                             <h2>Email</h2>
-                            <p><a href="mailto:safic913@gmail.com" itemprop="email">safic913@gmail.com</a></p>
+                            <p>
+                                <a
+                                    href="mailto:safic913@gmail.com"
+                                    itemprop="email"
+                                    >safic913@gmail.com</a
+                                >
+                            </p>
                         </article>
                         <article class="card contact-card">
                             <h2>Phone</h2>
@@ -205,14 +525,32 @@
                         </article>
                         <article class="card contact-card">
                             <h2>Socials</h2>
-                            <p><a href="https://www.github.com/andmoreduro" itemprop="sameAs"><img class="icon" src="assets/images/github-mark-white.svg" alt="GitHub"></a></p>
-                            <p><a href="https://www.linkedin.com/in/andrés-moreno-8b0506264" itemprop="sameAs"><img class="icon" src="assets/images/LI-In-Bug.png" alt="LinkedIn"></a></p>
+                            <p>
+                                <a
+                                    href="https://www.github.com/andmoreduro"
+                                    itemprop="sameAs"
+                                    ><img
+                                        class="icon"
+                                        src="assets/images/github-mark-white.svg"
+                                        alt="GitHub"
+                                /></a>
+                            </p>
+                            <p>
+                                <a
+                                    href="https://www.linkedin.com/in/andrés-moreno-8b0506264"
+                                    itemprop="sameAs"
+                                    ><img
+                                        class="icon"
+                                        src="assets/images/LI-In-Bug.png"
+                                        alt="LinkedIn"
+                                /></a>
+                            </p>
                         </article>
                     </div>
                 </section>
             </main>
         </div>
-        <script src="js/nav-link.js"></script>
         <script src="js/scroll-spy.js"></script>
+        <script src="js/hamburger-menu.js"></script>
     </body>
 </html>
