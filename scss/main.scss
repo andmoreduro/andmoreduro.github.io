@@ -338,3 +338,19 @@ a {
 body.no-scroll {
     overflow: hidden;
 }
+
+.product-link-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: variables.$accent;
+    color: variables.$base;
+    text-decoration: none;
+    border-radius: variables.$border-radius;
+    font-weight: bold;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.product-link-button:hover {
+    opacity: 0.8;
+}
