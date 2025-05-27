@@ -40,7 +40,6 @@ a {
     min-height: 100dvh;
 }
 
-
 .hamburger-button {
     display: none;
     position: fixed;
@@ -52,7 +51,7 @@ a {
     padding: 12px;
     cursor: pointer;
     border-radius: variables.$border-radius;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
     .hamburger-icon {
         display: block;
@@ -70,7 +69,9 @@ a {
             height: 2px;
             background-color: variables.$text;
             left: 0;
-            transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+            transition:
+                transform 0.3s ease-in-out,
+                top 0.3s ease-in-out;
         }
 
         &::before {
@@ -140,7 +141,9 @@ a {
     color: variables.$text;
     font-size: variables.$nav-link-font-size;
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
     display: inline-block;
 
     &:hover {
@@ -163,7 +166,6 @@ a {
     overflow: auto;
 
     padding: 2em variables.$card-padding;
-
 }
 
 .introduction-container {
@@ -214,7 +216,8 @@ a {
     border-radius: variables.$border-radius;
     padding: variables.$card-padding;
     color: variables.$text;
-    h2, h3 {
+    h2,
+    h3 {
         color: variables.$text;
     }
     p {
@@ -228,7 +231,6 @@ a {
     gap: variables.$card-padding;
 }
 
-
 @media (max-width: #{variables.$mobile-breakpoint}) {
     h1 {
         font-size: 2.5em;
@@ -237,7 +239,6 @@ a {
     section > h1 {
         font-size: 2em;
     }
-
 
     .hamburger-button {
         display: block;
@@ -255,13 +256,14 @@ a {
         transform: translateX(-100%);
         z-index: 1000;
         padding-top: 70px;
+        padding-bottom: 70px;
         align-items: flex-start;
         justify-content: flex-start;
         flex: none;
 
         &.nav-open {
             transform: translateX(0);
-            box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+            box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
         }
 
         .close-nav-button {
@@ -332,7 +334,6 @@ a {
         }
     }
 }
-
 
 body.no-scroll {
     overflow: hidden;
